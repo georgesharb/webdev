@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Georges.sec Security checks for small websites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <p class="brand">Georges.sec</p>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#features">Checks</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#toolkit">Toolkit</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="page">
+        <section id="hero" class="hero">
+            <div class="hero-copy">
+                <h1>Find the holes in your website before someone else does.</h1>
+                <p class="hero-text">
+                    I'm Georges, a software engineering student training in offensive
+                    security. I test small websites the way an attacker would, then
+                    explain what I found in plain language.
+                </p>
+                <p class="hero-note">Every check is done only with your written permission.</p>
+            </div>
+
+            <div class="report">
+                <p class="report-title">Sample report: bakery-shop.example</p>
+                <ul class="findings">
+                    <li class="finding finding-high">
+                        <p class="finding-level">High</p>
+                        <p class="finding-text">Login form allows unlimited password attempts</p>
+                    </li>
+                    <li class="finding finding-medium">
+                        <p class="finding-level">Medium</p>
+                        <p class="finding-text">Server shows its software version to visitors</p>
+                    </li>
+                    <li class="finding finding-low">
+                        <p class="finding-level">Low</p>
+                        <p class="finding-text">Cookies are sent without the Secure flag</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2>What I check</h2>
+            <p class="section-intro">Three checks, one report, and a clear list of what to fix first.</p>
+            <div class="card-row">
+                <div class="card">
+                    <h3>Web application</h3>
+                    <p>Login forms, input fields and sessions, tested for the common mistakes that let attackers in.</p>
+                </div>
+                <div class="card">
+                    <h3>Network exposure</h3>
+                    <p>Which ports and services your server shows to the internet, and which of them should be closed.</p>
+                </div>
+                <div class="card">
+                    <h3>Database safety</h3>
+                    <p>How your site talks to its database, and whether a crafted request could read data it shouldn't.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About me</h2>
+            <div class="about-content">
+                <img class="about-photo" src="images/georges.jpg"
+                     alt="Georges, sitting at a desk with a laptop open to a terminal">
+                <div class="about-text">
+                    <p>
+                        I'm a software engineering student. Most of my coursework right now is
+                        split between C++, Linux and Bash scripting, networking, and databases,
+                        and I spend the time outside of class going deeper on the systems side
+                        of all of it.
+                    </p>
+                    <p>
+                        I'm working toward offensive security: pentesting and red teaming. That
+                        means a lot of practice boxes, a home lab I keep rebuilding, and reading
+                        about how things break rather than only how they're supposed to work.
+                        When I'm not at a keyboard I'm usually doing combat sports.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="toolkit" class="toolkit">
+            <h2>Toolkit</h2>
+            <p class="section-intro">What I bring to every check.</p>
+            <ul class="tag-list">
+                <li>C++ and object-oriented programming</li>
+                <li>Linux and Bash scripting</li>
+                <li>Routing, switching and VLANs</li>
+                <li>SQL and relational database design</li>
+                <li>HTML and CSS</li>
+            </ul>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Request a check</h2>
+            <form class="contact-form">
+                <div class="field">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="field">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="field">
+                    <label for="website">Website to check</label>
+                    <input type="url" id="website" name="website" placeholder="https://" required>
+                </div>
+                <div class="field">
+                    <label for="message">Anything I should know?</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="button-group">
+                    <button type="submit" class="button">Send request</button>
+                    <button type="reset" class="button button-ghost">Clear form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Georges.sec. A fictional service built for a class assignment.</p>
+        <p>Built with HTML and CSS.</p>
+    </footer>
+</body>
+</html>
