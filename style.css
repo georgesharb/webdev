@@ -1,0 +1,26 @@
+img, input, textarea, button { box-sizing: border-box; }
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  margin: 0;
+  font-family: system-ui, Arial, sans-serif;
+  line-height: 1.5;
+  color: #1f2733;
+  background: #f4f6fb;
+}
+h1, h2, h3 { margin-top: 0; line-height: 1.2; }
+h1 { font-size: 2rem; margin-bottom: 1rem; }
+h2 { font-size: 1.5rem; margin-bottom: 0.5rem; }
+h3 { font-size: 1.125rem; margin-bottom: 0.5rem; }
+p { margin: 0 0 1rem; }
+/* HEADER */
+header {
+  grid-area: header;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 1rem;
+  background: #0f172a;
+}
