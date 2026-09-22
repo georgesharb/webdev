@@ -24,3 +24,10 @@ header {
   padding: 1rem;
   background: #0f172a;
 }
+.brand { margin: 0; font-size: 1.25rem; font-weight: 700; color: #ffffff; }
+
+/* NAV  */
+nav ul { display: flex; flex-wrap: wrap; gap: 1rem; margin: 0; padding: 0; }
+nav li, .tag-list li { display: block; } /* removes the list bullet */
+nav a { color: #93c5fd; font-weight: 600; transition: color 180ms ease-out; }
+nav a:hover { color: #ffffff; }
